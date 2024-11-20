@@ -1,20 +1,15 @@
 import React from "react";
 import {
-  FaBehance,
-  FaDribbble,
-  FaFacebookF,
   FaGithub,
-  FaInstagram,
   FaLinkedinIn,
-  FaSkype,
-  FaTwitter,
+  FaBloggerB,
 } from "react-icons/fa";
-import profile from "../../../images/profile.jpg";
+import profile from "../../../images/ygProfile.jpg";
 
 const socials = [
   {
-    id: 1,
-    icon: <FaFacebookF />,
+    id: 0,
+    icon: <FaBloggerB />,
     link: "#0",
   },
   {
@@ -27,53 +22,28 @@ const socials = [
     icon: <FaLinkedinIn />,
     link: "#0",
   },
-  {
-    id: 4,
-    icon: <FaInstagram />,
-    link: "#0",
-  },
-  {
-    id: 5,
-    icon: <FaBehance />,
-    link: "#0",
-  },
-  {
-    id: 6,
-    icon: <FaDribbble />,
-    link: "#0",
-  },
-  {
-    id: 7,
-    icon: <FaSkype />,
-    link: "#0",
-  },
-  {
-    id: 7,
-    icon: <FaTwitter />,
-    link: "#0",
-  },
 ];
 
 const Sidebar = () => {
   return (
     <aside className="sticky top-0 bg-white md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
       <div className="w-24 h-24 rounded-md overflow-hidden mx-auto mb-5">
-        <img src={profile} alt="shafiqhammad" className="w-full" />
+        <img src={profile} alt="박윤기" className="w-full" />
       </div>
       <div className="text-center">
-        <h1 className="text-xl text-gray-800 font-bold mb-1">John Doe</h1>
+        <h1 className="text-xl text-gray-800 font-bold mb-1">박윤기</h1>
         <p className="text-sm text-gray-400 mb-3">
-          Frontend Web Developer at
           <a href="#0" className="text-purple-600 pl-1">
-            Abc Company
+            8
           </a>
+          년차 프론트엔드 개발자
         </p>
         <a
           href="#0"
           className="inline-block mb-3 rounded bg-purple-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-purple-800"
           download="Resume"
         >
-          Download Resume
+          이력서 다운로드
         </a>
         <ul className="flex flex-wrap justify-center">
           {socials.map((social, id) => (
